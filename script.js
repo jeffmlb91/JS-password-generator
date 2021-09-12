@@ -51,8 +51,9 @@ function generatePassword() {
     console.log(userChoice);
 
     for (var i = 0; i < askUser; i++) {
-      // this will take allChoices and get the character at the index of the random number we got from our password variable and add it to the empty string called character. THIS IS OUR FINAL PASSWORD
+      // this will take the number of characters the user wants in their password and multiply allChoices.length (number of indexes in string of allChoices) by math.random to get the random numbers for each index.
       var password = Math.floor(userChoice.length * Math.random());
+      // this will take allChoices and get the character at the index of the random number we got from our password variable and add it to the empty string called character. THIS IS OUR FINAL PASSWORD
       character += userChoice.charAt(password);
       console.log(password);
     }
