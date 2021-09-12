@@ -21,7 +21,7 @@ function generatePassword() {
   var askUser = parseInt(
     window.prompt("Please select a password between 8 and 128")
   );
-  if (askUser < 8 || askUser > 12) {
+  if (askUser < 8 || askUser > 128) {
     alert("Please select a password that meets the number criteria");
   } else {
     var lowerCaseConfirm = window.confirm(
