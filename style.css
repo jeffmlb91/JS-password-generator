@@ -88,11 +88,14 @@ header {
   cursor: pointer;
 }
 
-button[disabled] {
+button {
   cursor: default;
   background: #c0c7cf;
 }
-
+button:hover {
+  background: rgb(99, 214, 205);
+  color: #3a18b5;
+}
 .float-right {
   float: right;
 }
